@@ -1,0 +1,30 @@
+form(action="." method="POST" class="form-registration")
+  label Name:
+  input(
+    type="text"
+    id="name"
+    name="name"
+    class="form-control"
+    pattern=".{3,}"
+  )
+  span.hint (min. 3 characters)
+
+  label Email:
+  input(
+    type="email"
+    id="email"
+    name="email"
+    class="form-control"
+  )
+
+  input(
+    type="button"
+    value="Submit"
+    class="btn btn-lg btn-primary btn-block"
+    onClick="window.location.href='http://localhost:3000/report'"
+    Value="Go"
+  )
+
+
+
+    
